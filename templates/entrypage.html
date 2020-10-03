@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="/static/css/entrypage.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<title>Allie's Art</title>
+</head>
+<body onload="init();">
+    <div class="jumbotron">
+        <div class="container">
+            <h2>Welcome to Allie's Art</h2>
+            <p>Isn't it the coolest?</p>
+        </div>
+    </div>
+    <div class="container" id="images_div">
+    </div>
+    <div class="container">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="$('#response').hide();">
+                  Upload
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <form id="upl_form" onsubmit="Upload_Submitted();return false;">
+                  <div class="form-group">
+                    <input type="file" class="form-control-file" id="FileInputControl">
+                    <input class="form-control" type="text" placeholder="Upload Code 1" id="upld_code1" autocomplete="off">
+                    <input class="form-control" type="text" placeholder="Upload Code 2" id="upld_code2" autocomplete="off">
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                    <label id="response" style="display:none;">Hey</label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="/static/js/entrypage.js"></script>
+</html>
